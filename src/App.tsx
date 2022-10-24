@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home'
 import SavedRepos from './pages/SavedRepos';
 
-const [username, setUsername] = createSignal('ebenezerdon')
+const [username, setUsername] = createSignal('solidjs')
 const [repos, setRepos] = createSignal([])
 createEffect(async () => {
   const res = await fetch(`https://api.github.com/users/${username()}/repos?sort=created`)
